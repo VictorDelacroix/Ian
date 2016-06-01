@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Prueba
 {
-    class Probar
+    public class Probar
     {
         public int Suma(int a, int b)
         {

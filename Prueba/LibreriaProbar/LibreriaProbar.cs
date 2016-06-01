@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using Prueba;
 
 namespace LibreriaProbar
 {
@@ -13,14 +14,14 @@ namespace LibreriaProbar
         [Test]
         public void TestSumaEqual()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.AreEqual(9, objPrueba.Suma(8, 1));
         }
 
         [Test]
         public void TestUnirEqual()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.AreEqual("Don Ian", objPrueba.Unir("Don ", "Ian"));
         }
 
@@ -29,14 +30,14 @@ namespace LibreriaProbar
         [Test]
         public void TestSumaNotEqual()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.AreNotEqual(9, objPrueba.Suma(1, 2));
         }
 
         [Test]
         public void TestUnirNotEqual()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.AreNotEqual("Don Ian", objPrueba.Unir("No", "Ian"));
         }
 
@@ -44,7 +45,7 @@ namespace LibreriaProbar
         [Test]
         public void TestUnirNull()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.IsNull(objPrueba.Unir(null, null));
         }
 
@@ -52,14 +53,14 @@ namespace LibreriaProbar
         [Test]
         public void TestBoolTrue()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.IsTrue(objPrueba.CompararIguales("Igual", "Igual"));
         }
 
         [Test]
         public void TestBoolFalse()
         {
-            Prueba objPrueba = new Prueba();
+            Probar objPrueba = new Probar();
             Assert.IsFalse(objPrueba.CompararIguales("Igual", "Igul"));
         }
     }
