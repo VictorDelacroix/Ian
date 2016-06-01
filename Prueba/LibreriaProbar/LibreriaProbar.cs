@@ -8,6 +8,7 @@ using Prueba;
 
 namespace LibreriaProbar
 {
+    [TestFixture]
     public class LibreriaProbar
     {
         //Valores Iguales
